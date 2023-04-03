@@ -1,9 +1,6 @@
 package delete_duplicates
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import . "sample/utils/linkedlist"
 
 func deleteDuplicates(head *ListNode) *ListNode {
 
