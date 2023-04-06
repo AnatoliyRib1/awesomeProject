@@ -1,11 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sample/problems/maxDepth"
+	. "sample/utils/binarytree"
+)
 
 func main() {
-	var nums = []int{1, 2, 3, 4, 5, 6, 7}
-	var k = 3
-	rotate(nums, k)
+	var nums = []int{1, 2, 11, 8, 3, 4, 5, 6, 7}
+	maxDepth.MaxDepth(BinaryTreeFromSlice(nums))
 }
 
 func rotate(nums []int, k int) {
